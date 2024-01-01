@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Utility First Fundamentals</title>
     <style>
@@ -49,7 +49,7 @@
     <!-- HTML/CSS Version -->
     <div class="alert">
       <div class="alert-logo-wrap">
-        <img class="alert-logo" src="../assets/img/warning.svg" alt="alert" />
+        <img alt="alert" class="alert-logo" src="../assets/img/warning.svg" />
       </div>
       <div class="alert-body">
         <h4 class="alert-title">Are You Sure?</h4>
@@ -58,5 +58,12 @@
     </div>
 
     <!-- Tailwind Version -->
+    <div class="mx-auto mt-12 flex max-w-sm items-center space-x-4 rounded-xl bg-white p-6 shadow-lg">
+      <img alt="" class="h-12 w-12" src="../assets/img/warning.svg" />
+      <div>
+        <div class="text-xl font-medium text-black">Are You Sure?</div>
+        <p class="text-slate-500">You are about to delete a post</p>
+      </div>
+    </div>
   </body>
 </html>
