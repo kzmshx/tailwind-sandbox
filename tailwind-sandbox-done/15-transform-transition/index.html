@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,33 +10,27 @@
         theme: {
           extend: {
             transitionDuration: {
-              0: '0ms',
-              2000: '2000ms',
+              0: "0ms",
+              2000: "2000ms",
             },
           },
         },
-      }
+      };
     </script>
     <title>Transform & Transition</title>
   </head>
   <body>
     <!-- No Transition -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
-    >
-      Click me
-    </button>
+    <button class="m-24 rounded bg-blue-500 px-8 py-2 text-white hover:bg-blue-700">Click me</button>
 
     <!-- Transition -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-700 hover:bg-blue-700"
-    >
+    <button class="m-24 rounded bg-blue-500 px-8 py-2 text-white transition-colors duration-700 hover:bg-blue-700">
       Click me
     </button>
 
     <!-- Transition & Transform -->
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-2000 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+      class="duration-2000 m-24 rounded bg-blue-500 px-8 py-2 text-white transition delay-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
     >
       Click me
     </button>
@@ -45,7 +39,7 @@
     <img
       src="../assets/img/img1.jpg"
       alt=""
-      class="hover:transform hover:rotate-180 hover:scale-75 hover:skew-x-12 transition"
+      class="transition hover:rotate-180 hover:skew-x-12 hover:scale-75 hover:transform"
     />
   </body>
 </html>
