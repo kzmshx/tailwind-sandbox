@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Container & Spacing</title>
   </head>
   <body>
     <!-- Container -->
-    <div>
-      <article>
+    <div class="container mx-auto">
+      <article class="bg-slate-300">
         <h3>Article One</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam libero molestiae recusandae
@@ -20,12 +20,42 @@
       </article>
 
       <!-- Margin -->
+      <h3 class="my-4">Margin</h3>
+      <div class="m-4 bg-slate-100">m-4</div>
+      <div class="mx-4 bg-slate-200">mx-4</div>
+      <div class="my-4 bg-slate-300">my-4</div>
+      <div class="mt-4 bg-slate-400">mt-4</div>
+      <div class="mr-4 bg-slate-500">mr-4</div>
+      <div class="mb-4 bg-slate-600">mb-4</div>
+      <div class="ml-4 bg-slate-700">ml-4</div>
+      <div class="mx-[200px] bg-slate-800">mx-[200px]</div>
 
       <!-- Padding -->
+      <h3 class="my-4">Padding</h3>
+      <div class="bg-slate-100 p-4">p-4</div>
+      <div class="bg-slate-200 px-4">px-4</div>
+      <div class="bg-slate-300 py-4">py-4</div>
+      <div class="bg-slate-400 pt-4">pt-4</div>
+      <div class="bg-slate-500 pr-4">pr-4</div>
+      <div class="bg-slate-600 pb-4">pb-4</div>
+      <div class="bg-slate-700 pl-4">pl-4</div>
+      <div class="bg-slate-800 px-[200px]">px-[200px]</div>
 
       <!-- Space Between X -->
+      <h3 class="my-4">Space Between X</h3>
+      <div class="flex space-x-4">
+        <div class="bg-red-100 p-3">01</div>
+        <div class="bg-red-100 p-3">02</div>
+        <div class="bg-red-100 p-3">03</div>
+      </div>
 
       <!-- Space Between Y -->
+      <h3 class="my-4">Space Between Y</h3>
+      <div class="flex flex-col space-y-4">
+        <div class="bg-red-100 p-3">01</div>
+        <div class="bg-red-100 p-3">02</div>
+        <div class="bg-red-100 p-3">03</div>
+      </div>
     </div>
   </body>
 </html>
