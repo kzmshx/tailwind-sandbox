@@ -2,31 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Colors</title>
   </head>
-  <body>
+  <body class="bg-gray-200">
     <!-- Default colors -->
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <p class="text-black">Tailwind is awesome</p>
+    <p class="text-white">Tailwind is awesome</p>
+    <p class="text-red-500">Tailwind is awesome</p>
+    <p class="text-green-500">Tailwind is awesome</p>
+    <p class="text-emerald-500">Tailwind is awesome</p>
+    <p class="text-zinc-300">Tailwind is awesome</p>
+    <p class="text-slate-800">Tailwind is awesome</p>
 
     <!-- Background Colors -->
+    <p class="bg-slate-800 text-yellow-200">Tailwind is awesome</p>
+    <p class="bg-emerald-400">Tailwind is awesome</p>
+    <p class="bg-yellow-300">Tailwind is awesome</p>
+    <p class="bg-indigo-800 text-white">Tailwind is awesome</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration-red-500">Tailwind is awesome</p>
+    <p class="underline decoration-emerald-600">Tailwind is awesome</p>
+    <p class="underline decoration-yellow-800">Tailwind is awesome</p>
 
     <!-- Border Colors -->
+    <input class="border border-blue-400" type="text" />
+    <input class="border border-green-400" type="text" />
+    <input class="border border-orange-400" type="text" />
 
     <!-- Divide Colors -->
+    <div class="divide-y divide-blue-300">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
 
     <!-- Outline Colors -->
+    <button class="outline outline-red-300">Button</button>
+    <button class="outline outline-blue-500">Button</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button class="bg-cyan-500 shadow-lg shadow-cyan-500">Submit</button>
+    <button class="bg-cyan-500 shadow-lg shadow-purple-500/100">Submit</button>
 
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-purple-500" checked>Tailwind is awesome</input>
+    <input type="radio" class="accent-red-500" checked>Tailwind is awesome</input>
 
     <!-- Arbitrary Colors -->
+    <div class="bg-[#427fab]">Tailwind is awesome</div>
+    <div class="bg-[rgb(0,100,177)]">Tailwind is awesome</div>
+    <div class="bg-[skyblue]">Tailwind is awesome</div>
   </body>
 </html>
