@@ -2,35 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TailwindCSS</title>
   </head>
   <body>
-    <!-- Positioning -->
+    <div class="text-xs">
+      <!-- Positioning -->
+      <div class="relative h-12 w-1/2 bg-red-200">
+        <p>Relative parent</p>
+        <div class="absolute bottom-0 right-0 bg-red-500">
+          <p>Absolute child</p>
+        </div>
+      </div>
+      <hr />
 
-    <!-- Top left corner -->
+      <!-- Top left corner -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">Top left</div>
+      </div>
+      <hr />
 
-    <!-- Top right corner -->
+      <!-- Top right corner -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">Top right</div>
+      </div>
+      <hr />
 
-    <!-- Bottom left corner -->
+      <!-- Bottom right corner -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute bottom-0 right-0 h-16 w-16 bg-yellow-300">Bottom right</div>
+      </div>
+      <hr />
 
-    <!-- Bottom right corner -->
+      <!-- Bottom left corner -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute bottom-0 left-0 h-16 w-16 bg-yellow-300">Bottom left</div>
+      </div>
+      <hr />
 
-    <!-- Span top edge -->
+      <!-- Span top edge -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">Span top</div>
+      </div>
 
-    <!-- Span left edge -->
+      <!-- Span right edge -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300">Span right</div>
+      </div>
 
-    <!-- Span right edge -->
+      <!-- Span bottom edge -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300">Span bottom</div>
+      </div>
 
-    <!-- Span bottom edge -->
+      <!-- Span left edge -->
+      <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300">Span left</div>
+      </div>
 
-    <!-- Display Classes -->
+      <!-- Display Classes -->
+      <div>
+        核融合発電は、太陽のエネルギー源である核融合反応を地球上で模倣し、
+        <span class="inline">エネルギーを生成する技術です。</span>このプロセスでは、
+        軽い原子核が高温・高圧の環境で融合し、より重い<span class="inline-block">環境で融合し、</span>より重い
+        原子核と大量の
+        <span class="block">エネルギーを放出します。</span>
+        核融合発電の主な原理とプロセスは以下の通り<span class="hidden">（隠されたテキスト）</span>
+        です。
+      </div>
 
-    <!-- Z-Index -->
+      <!-- Z-Index -->
+      <div class="relative h-36">
+        <div class="absolute left-10 z-40 h-24 w-24 bg-blue-200">1</div>
+        <div class="absolute left-20 h-24 w-24 bg-blue-300">2</div>
+        <div class="absolute left-40 z-10 h-24 w-24 bg-blue-400">3</div>
+        <div class="absolute left-60 z-20 h-24 w-24 bg-blue-500">4</div>
+        <div class="absolute left-80 h-24 w-24 bg-blue-600">5</div>
+      </div>
 
-    <!-- Floats -->
+      <!-- Floats -->
+      <div class="w-1/2">
+        <img class="float-right h-48 w-48" src="/assets/img/img1.jpg" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere numquam voluptatem accusantium atque
+          cupiditate nulla ratione saepe veniam, ex iure nisi mollitia sed rerum veritatis temporibus iusto! Molestiae,
+          ratione doloribus?
+        </p>
+      </div>
+    </div>
   </body>
 </html>
 
